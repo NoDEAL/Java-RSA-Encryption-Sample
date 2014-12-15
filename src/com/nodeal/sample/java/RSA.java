@@ -1,3 +1,5 @@
+package com.nodeal.sample.java;
+
 import java.security.InvalidKeyException;
 import java.security.Key;
 import java.security.NoSuchAlgorithmException;
