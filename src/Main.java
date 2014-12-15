@@ -1,5 +1,6 @@
-import java.io.*;
-import java.security.*;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.security.Key;
 
 public class Main {
 
