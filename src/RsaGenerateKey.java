@@ -7,10 +7,10 @@ public class RsaGenerateKey {
     KeyPair mKeyPair;
     KeyFactory mKeyFactory;
 
-    public RsaGenerateKey() throws NoSuchAlgorithmException {
+    public RsaGenerateKey(int keySize) throws NoSuchAlgorithmException {
         mKeyPairGenerator = KeyPairGenerator.getInstance("RSA");
-        // The bigger is slower and stronger. 1024 and 2048 also available.
-        mKeyPairGenerator.initialize(4096);
+        // The bigger is slower and stronger.
+        mKeyPairGenerator.initialize(keySize);
 
         mKeyFactory = KeyFactory.getInstance("RSA");
 
