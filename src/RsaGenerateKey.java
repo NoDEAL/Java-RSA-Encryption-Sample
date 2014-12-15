@@ -9,7 +9,7 @@ public class RsaGenerateKey {
 
     public RsaGenerateKey() throws NoSuchAlgorithmException {
         mKeyPairGenerator = KeyPairGenerator.getInstance("RSA");
-        /* The bigger is slower and stronger. 1024 and 2048 also available. */
+        // The bigger is slower and stronger. 1024 and 2048 also available.
         mKeyPairGenerator.initialize(4096);
 
         mKeyFactory = KeyFactory.getInstance("RSA");
